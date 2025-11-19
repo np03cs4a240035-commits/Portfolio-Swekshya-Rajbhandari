@@ -1,88 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<title>Group1</title>
-	<meta charset="utf-8">
-	<style>
-		section {
-			min-height: 150px;
-		}
-
-		#banner{
-			background-color: orangered;
-			padding-left: 550px;
-		}
-
-		#section1{
-			background-color: lightyellow;
-			padding-left: 550px;
-		}
-
-		#section2{
-			background-color: skyblue;
-			padding-left: 550px;
-		}
-
-		#section3{
-			background-color: green;
-			padding-left: 550px;
-		}
-		.link{
-			text-decoration: none;
-			margin-left : 300px ;
-		}
-		nav{
-			background-color: purple;
-			min-height: 50px;
-			padding-top: 25px;
-		}
-
-		#class{
-			text-align: center;
-		}
-	</style>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-	<header>
-		<h1 style= "text-align: center;">Group1 </h1>
 
-		<nav>
-			<a class="link" href="#">Home</a>
-			<a class="link" href="#">About</a>
-			<a class="link" href="#">Contact</a>
-		</nav>
-	</header>
+    <!-- HEADER -->
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-	<section id="banner">
-		<h2>This is for banner</h2>
-	</section>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <img src="images/a.png" alt="a.pngile Image" class="profile-img" />
+        <p>
+            Hello! I am a web development student building my first portfolio.
+            I love coding, problem-solving, and creating beautiful UI.
+        </p>
+    </section>
 
-	<main>
-		<aside style = "background-color: pink; float: left; width:250px;">
-			<ul>
-				<li>Link1</li>
-				<li>Link2</li>
-				<li>Link3</li>
-				<li>Link4</li>
-			</ul>
-		</aside>
-		<section id="section2">
-			<h2>This is for section 2</h2>
-		</section>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
 
-		<section id="section3">
-			<h2>This is for section 3</h2>
-		</section>
+        <div class="project-card">
+            <img src="images/profile.svg" alt="Project Screenshot" />
+            <h3>Project Title</h3>
+            <p>This is a short description of my first project.</p>
+        </div>
 
-	</main>
+    </section>
 
-	<footer id= "class">
-		&copy All rights reserved @2025
-	</footer>
-	
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+
+        <form>
+            <label>Name</label>
+            <input type="text" placeholder="Your name" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Your email" required>
+
+            <label>Message</label>
+            <textarea placeholder="Your message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
 </body>
-
 </html>
